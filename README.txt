@@ -41,7 +41,7 @@ REQUISITOS Y PASOS PARA EJECUTAR
    - SQL Server Management Studio (SSMS).
 
 2. Configuración de la Base de Datos:
-   - Abrir SSMS y ejecutar el script incluido en la carpeta `/sql/script_aca_biblioteca.sql`.
+   - Abrir SSMS y ejecutar el script incluido en la carpeta `/sql/script_aca_biblioteca.sql` el nombre es ¨(localdb)\\MSSQLLocalDB".
    - El script creará la base de datos `ACA_Biblioteca` y cargará datos de prueba iniciales.
 
 3. Ejecución del código:
