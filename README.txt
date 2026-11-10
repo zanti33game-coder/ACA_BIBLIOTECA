@@ -52,12 +52,13 @@ REQUISITOS Y PASOS PARA EJECUTAR
 
 ESTRUCTURA DE CARPETAS DEL REPOSITORIO
 
-/src         Código fuente completo del proyecto en Visual Studio.
 
-/sql         Script SQL con tablas, llaves foráneas y datos iniciales.
+ACA_BIBLIOTECA/             Código fuente completo del proyecto C# (Formularios y Capa de Datos).
 
-/docs        Documentación del ACA.
+ACA_BIBLIOTECA.sln          Archivo de solución principal para abrir en Visual Studio.
 
-README.txt   Instrucciones y detalles del proyecto.
+script_aca_biblioteca.sql   Script SQL con tablas, llaves foráneas y datos iniciales de prueba.
+
+README.md        
 
 
