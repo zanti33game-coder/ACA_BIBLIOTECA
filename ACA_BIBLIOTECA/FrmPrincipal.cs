@@ -11,11 +11,13 @@ namespace ACA_Biblioteca
         {
             InitializeComponent();
 
-            // Asignar eventos a los botones del menú
+            // Asignación de eventos
             btnAutores.Click += btnAutores_Click;
             btnLibros.Click += btnLibros_Click;
             btnUsuarios.Click += btnUsuarios_Click;
-            btnPrestamos.Click += btnPrestamos_Click; // <-- Evento asignado
+            btnPrestamos.Click += btnPrestamos_Click;
+            btnEditoriales.Click += btnEditoriales_Click;
+            btnProbarConexion.Click += btnProbarConexion_Click;
         }
 
         private void AbrirFormulario(Form formularioHijo)
@@ -54,6 +56,11 @@ namespace ACA_Biblioteca
         private void btnPrestamos_Click(object sender, EventArgs e)
         {
             AbrirFormulario(new FrmPrestamos());
+        }
+
+        private void btnEditoriales_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new FrmEditoriales());
         }
 
         private void btnProbarConexion_Click(object sender, EventArgs e)
