@@ -36,9 +36,9 @@ MÓDULOS DE LA APLICACIÓN
 REQUISITOS Y PASOS PARA EJECUTAR
 
 1. Requisitos previos:
-   - Visual Studio 2022 (con carga de trabajo de desarrollo de escritorio .NET).
-   - SQL Server / SQL Server LocalDB.
-   - SQL Server Management Studio (SSMS).
+   - Visual Studio 2022 (con carga de trabajo de desarrollo de escritorio .NET).https://visualstudio.microsoft.com/es/downloads/
+   - SQL Server / SQL Server LocalDB.https://learn.microsoft.com/es-es/sql/database-engine/configure-windows/sql-server-express-localdb?view=sql-server-ver17
+   - SQL Server Management Studio (SSMS).https://learn.microsoft.com/es-es/ssms/install/install
 
 2. Configuración de la Base de Datos:
    - Abrir SSMS y ejecutar el script incluido en la carpeta `/sql/script_aca_biblioteca.sql` el nombre es ¨(localdb)\\MSSQLLocalDB".
