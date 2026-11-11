@@ -39,10 +39,19 @@ REQUISITOS Y PASOS PARA EJECUTAR
    - Visual Studio 2022 (con carga de trabajo de desarrollo de escritorio .NET).     https://visualstudio.microsoft.com/es/downloads/
    - SQL Server / SQL Server LocalDB.    https://learn.microsoft.com/es-es/sql/database-engine/configure-windows/sql-server-express-localdb?view=sql-server-ver17
    - SQL Server Management Studio (SSMS).   https://learn.microsoft.com/es-es/ssms/install/install
+   - SQL Epress.
 
-2. Configuración de la Base de Datos:
-   - Abrir SSMS y ejecutar el script incluido en la carpeta `/sql/script_aca_biblioteca.sql` el nombre es ¨(localdb)\\MSSQLLocalDB".
+2. Configuración y creacion de la Base de Datos:
+   - Abrir SSMS y ejecutar el script incluido en la carpeta: "/sql/script_aca_biblioteca.sql" 
    - El script creará la base de datos `ACA_Biblioteca` y cargará datos de prueba iniciales.
+   - En caso de que no funcione el servidor y envié el error 52 -  No se puede ubicar la instalación de Local Database Runtime.
+1 comprobar quer SQL express este instalado correctamente para eso ingres Window + R y buscar servicios que inicialicen con SQL, en caso de no tenerlo instalarlos y reiniciar el pc
+2 Comprobvor que la base de datos SQL del github este subida correctamente y ejecutar para evitar cualquier error o falla de solicitud
+3 cambiar el nombre de la base de datos ubicada en la carpeta ACA_Biblioteca -> Datos -> conexion.cs abrir y cambiar la dirección de la base de datos:
+private readonly string cadenaConexion = @"Server=(localdb)\MSSQLLocalDB; Database=ACA_Biblioteca; Integrated Security=True; TrustServerCertificate=True;"
+por el nombre de la base de datos en el equipo:
+private readonly string cadenaConexion = @"Server=MI_BASE _DE _DATOS; Database=ACA_Biblioteca; Integrated Security=True; TrustServerCertificate=True;";
+y volver a conectar el pograma de sql y aca_biblioteca;
 
 3. Ejecución del código:
    - Abrir la solución `ACA_BIBLIOTECA.sln` en Visual Studio.
